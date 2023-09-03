@@ -16,3 +16,6 @@ Danny Ma's 8-Week SQL Challenge Study Cases
 You can find the solutions links for the case studies below:
 * [Case Study #1 - Danny’s Diner](https://github.com/eangutierrez/8_Week_SQL_Challenge/tree/main/Case_Study_1_Dannys_Diner)
 * [Case Study #2 - Pizza Runner](https://github.com/eangutierrez/8_Week_SQL_Challenge/tree/main/Case_Study_2_Pizza_Runner)
+
+A huge thank you to Danny Ma for volunteering his time to mentor aspiring data analysts on their journey to become more data literate.  You can find more information about the 8 Week SQL Challenge [here](https://8weeksqlchallenge.com/getting-started/).
+#8WeekSQLChallenge
