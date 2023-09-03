@@ -6,7 +6,7 @@ Danny Ma's 8-Week SQL Challenge Study Cases
 ## Project Overview
 * Answered several business intelligence-related questions posed by leadership regarding each company's performance.
 * Created several MySQL scripts to upload and pre-process the data, perform a thorough exploratory and explanatory analysis, and built several pivot tables to write business reports.
-* Created a MySQL script to highlight key SQL skills like rank functions, common table expressions, temporary tables, and Beaulieu.
+* Created a MySQL script to highlight key SQL skills like rank functions, common table expressions, temporary tables, and case statements.
 * Set up a database and SQL editor to interact with the database, upload the schema, and dump tables.
 
 ## Code and Resources Used
