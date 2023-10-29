@@ -1,4 +1,4 @@
-# Case Study #3: Foodie Fi - Customer Journey Solutions
+# Case Study #4: Data Bank - Customer Journey Solutions
 
 ## 1. How many unique nodes are there on the Data Bank system?
 ### Explanation
