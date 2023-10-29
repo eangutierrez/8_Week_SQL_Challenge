@@ -33,9 +33,9 @@ FROM
 -- Update unnormalized pizza_recipes table: 
 INSERT INTO pizza_recipes 
 VALUES (3, (SELECT
-				GROUP_CONCAT(topping_id SEPARATOR ', ')
-			FROM
-				pizza_toppings));
+            	GROUP_CONCAT(topping_id SEPARATOR ', ')
+	    FROM
+		pizza_toppings));
 
 			
 -- Update normalized pizza_recipes table: 
