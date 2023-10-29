@@ -1,4 +1,4 @@
-# Case Study #2: Foodie Fi - Outside The Box Questions & Solutions
+# Case Study #3: Foodie Fi - Outside The Box Questions & Solutions
 
 The following are open ended questions which might be asked during a technical interview for this case study.  There are no right or wrong answers, but answers that make sense from both a technical and a business perspective.
 Make an amazing impression!
