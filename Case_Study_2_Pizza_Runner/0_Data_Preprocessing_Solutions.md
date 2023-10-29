@@ -1,4 +1,4 @@
-# Case Study #1: Danny's Diner
+# Case Study #2: Pizza Runner
 # Data Preprocessing
 ## 1. Clean the Data
 ### Explanation
