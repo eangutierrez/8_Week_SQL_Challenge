@@ -1,4 +1,4 @@
-# Case Study #2: Pizza Runner - Data Preprocessing
+# Case Study #2: Pizza Runner - Data Preprocessing Solutions
 ## 1. Clean the Data
 ### Explanation
 
