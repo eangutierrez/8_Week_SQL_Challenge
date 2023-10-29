@@ -12,7 +12,7 @@ Danny needs your help to quantify the impact of this change on the sales perform
 You can find more information regarding the case study [here](https://https://8weeksqlchallenge.com/case-study-5/).
 
 ## Entity Relationship Diagram
-![](/Images/project_3/eed.PNG)
+![](/Images/project_5/eed.PNG)
 
 ## Follow Along
 You can hone your MySQL skills by coding along with me by using [db-fiddle](https://www.db-fiddle.com/f/jmnwogTsUE8hGqkZv9H7E8/8).  Please let me know if you have any questions about my answers, or if you have a better approach to find the solutions by shooting me a [LinkedIn message](https://www.linkedin.com/in/eangutierrez/).
