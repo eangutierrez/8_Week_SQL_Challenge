@@ -16,7 +16,7 @@ The management team at Data Bank want to increase their total customer base - bu
 You can find more information regarding the case study [here](https://8weeksqlchallenge.com/case-study-4/).
 
 ## Entity Relationship Diagram
-![](/Images/project_3/eed.PNG)
+![](/Images/project_4/eed.PNG)
 
 ## Follow Along
 You can hone your MySQL skills by coding along with me by using [db-fiddle](https://www.db-fiddle.com/f/2GtQz4wZtuNNu7zXH5HtV4/3).  Please let me know if you have any questions about my answers, or if you have a better approach to find the solutions by shooting me a [LinkedIn message](https://www.linkedin.com/in/eangutierrez/).
