@@ -1,4 +1,4 @@
-# Case Study #2: Foodie Fi - Data Analysis Questions & Solutions
+# Case Study #3: Foodie Fi - Data Analysis Questions & Solutions
 
 ## 1. How many customers has Foodie-Fi ever had?
 ### Explanation
