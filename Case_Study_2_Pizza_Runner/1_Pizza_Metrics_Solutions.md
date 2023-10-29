@@ -1,4 +1,4 @@
-# Case Study #2: Pizza Runner - Pizza Metrics
+# Case Study #2: Pizza Runner - Pizza Metrics Solutions
 
 ## 1. How many pizzas were ordered?
 ### Explanation
