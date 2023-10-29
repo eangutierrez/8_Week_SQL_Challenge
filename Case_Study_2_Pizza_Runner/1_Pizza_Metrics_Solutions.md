@@ -1,4 +1,4 @@
-# Case Study #1: Danny's Diner
+# Case Study #2: Pizza Runner
 # Pizza Metrics
 
 ## 1. How many pizzas were ordered?
