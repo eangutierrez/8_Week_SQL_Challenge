@@ -18,6 +18,10 @@ GROUP BY
 	ct.txn_type;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/c9f0836f-8f48-488c-81ff-178cf67b9b1e)
+
+
 ## 2. What is the average total historical deposit counts and amounts for all customers?
 ### Explanation
 The customer_transactions table has all the information we 
@@ -50,6 +54,10 @@ FROM
 	deposits_cte AS d;
 ```
 
+### Answer 
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fe6854f0-b83f-48a8-822f-8988dc70edbd)
+
+
 ## 3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?
 ### Explanation
 The customer_transactions table has all the information we 
@@ -69,13 +77,13 @@ WITH data_cte AS
 		MONTHNAME(ct.txn_date) AS txn_month,
 		SUM(CASE
 			WHEN ct.txn_type = 'deposit' THEN 1 ELSE 0
-		END) AS num_deposits,
+		    END) AS num_deposits,
 		SUM(CASE
 			WHEN ct.txn_type = 'withdrawal' THEN 1 ELSE 0
-		END) AS num_withdrawals, 
+                    END) AS num_withdrawals, 
 		SUM(CASE
 			WHEN ct.txn_type = 'purchase' THEN 1 ELSE 0
-		END) AS num_purchases
+		    END) AS num_purchases
 	FROM 
 		customer_transactions AS ct
 	GROUP BY
@@ -95,6 +103,10 @@ GROUP BY
 ORDER BY
 	FIELD(d.txn_month, 'January', 'February', 'March', 'April');
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/a8c6f9a8-1ffb-4627-bd1e-c2c2e94e6cc7)
+
 
 ## 4. What is the closing balance for each customer at the end of the month?
 ### Explanation
@@ -155,6 +167,12 @@ WHERE
 ORDER BY
 	b.customer_id, FIELD(b.txn_month, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 ```
+
+### Answer
+Note: this is only part of the answer.  The final table has 1720 records
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5c720111-1027-446e-b37a-1eb5091974f5)
+
 
 ## 5. What is the percentage of customers who increase their closing balance by more than 5%?
 ### Explanation
@@ -244,3 +262,6 @@ SELECT
 FROM
 	percentage_cte;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/89d1192e-d4a8-4ca6-95cd-0e703c49a691)
