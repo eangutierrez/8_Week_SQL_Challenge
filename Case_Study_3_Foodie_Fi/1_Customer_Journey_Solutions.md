@@ -76,3 +76,6 @@ ON
 WHERE
 	s.customer_id IN (1, 2, 11, 13, 15, 16, 18, 19);
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/94c21957-d3df-4e8d-8a0b-b44604637f5a)
