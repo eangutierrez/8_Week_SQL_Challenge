@@ -77,6 +77,10 @@ FROM
 	week_classifier_cte AS wc;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/25c519f6-37c6-4730-aa08-421b7c4abaf4)
+
+
 ```SQL
 -- platform:
 WITH week_selection_cte AS
@@ -114,6 +118,10 @@ SELECT
 FROM 
 	week_classifier_cte AS wc;
 ```	
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5bd7cc64-ba43-46a9-afe4-0a39fbef3858)
+
 
 ```SQL
 -- age_band:
@@ -153,6 +161,10 @@ FROM
 	week_classifier_cte AS wc;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/e331cc9a-70fd-4415-ab50-b4d5914fefff)
+
+
 ```SQL
 -- demographic: 
 WITH week_selection_cte AS
@@ -191,6 +203,10 @@ FROM
 	week_classifier_cte AS wc;
 ```	
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/52bf0dc9-0ba9-45d4-bb8d-5ee966e31737)
+
+
 ```SQL
 -- customer_type: 
 WITH week_selection_cte AS
@@ -228,6 +244,10 @@ SELECT
 FROM 
 	week_classifier_cte AS wc;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/bee0b4c8-4edf-4e1e-8097-da7dcba9ff80)
+
 
 Based on our results, we can produce the following 
 recommendations:
