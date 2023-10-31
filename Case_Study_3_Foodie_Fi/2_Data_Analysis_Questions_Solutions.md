@@ -20,6 +20,10 @@ ORDER BY
 	s.customer_id, s.start_date;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/54870b30-c79a-4426-b071-33b2a2f9eaa3)
+
+
 ## 2. What is the monthly distribution of trial plan start_date values for our dataset?  Use the start of the month as the group by value
 ### Explanation
 The subscriptions and plans tables have all 
@@ -47,7 +51,11 @@ GROUP BY
 ORDER BY
 	FIELD(month_name, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 ```
-	
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/8f47cc0e-f3aa-4852-8e73-8bf143185fa7)
+
+ 
 ## 3. What plan start_date values occur after the year 2020 for our dataset?  Show the breakdown by count of events for each plan_name
 ### Explanation
 The subscriptions and plans tables have all 
@@ -75,6 +83,10 @@ GROUP BY
 ORDER BY
 	p.plan_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/a89de246-2948-4b82-8d81-cf2301b4b4ad)
+
 
 ## 4. What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 ### Explanation
@@ -126,6 +138,10 @@ ORDER BY
 	p.plan_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/b2b0853c-972c-4a49-bd11-94f7bcd61bbd)
+
+
 ## 5. How many customers have churned straight after their initial free trial?  What percentage is this rounded to the nearest whole number?
 ### Explanation
 The subscriptions and plans tables have all 
@@ -176,6 +192,10 @@ FROM
 	aggregates_cte AS a;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/ee3daca3-169e-4b55-a032-24be0b772e9d)
+
+
 ## 6. What is the number and percentage of customer plans after their initial free trial?
 ### Explanation
 The subscriptions and plans tables have all 
@@ -208,9 +228,9 @@ SELECT
 	c.plan_name,
 	COUNT(c.customer_id) AS total_plans,
 	ROUND((COUNT(c.customer_id) / (SELECT 
-                                   COUNT(DISTINCT customer_id)
-								                 FROM 
-								   	               customer_journey_cte) * 100), 1) AS pct
+                                            COUNT(DISTINCT customer_id)
+			               FROM 
+					     customer_journey_cte) * 100), 1) AS pct
 FROM
 	customer_journey_cte AS c
 WHERE 
@@ -220,6 +240,10 @@ GROUP BY
 ORDER BY
 	c.plan_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/72b48beb-2b67-476b-97ca-830662d91cb2)
+
 
 ## 7. What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
 ### Explanation
@@ -266,7 +290,11 @@ GROUP BY
 ORDER BY
 	c.plan_id;
 ```
-	
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5e1b530b-8609-42c7-8726-a12d387c9148)
+
+
 ## 8. How many customers have upgraded to an annual plan in 2020?
 ### Explanation
 The subscriptions and plans tables have all 
@@ -288,6 +316,10 @@ ON
 WHERE
 	YEAR(s.start_date) = 2020 AND p.plan_name = 'pro annual';
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/35b305b4-077f-4450-ba8e-3d9f21a38877)
+
 
 ## 9.  How many days on average does it take for a customer to go to an annual plan from the day they join Foodie-Fi?
 ### Explanation
@@ -349,6 +381,10 @@ INNER JOIN
 ON
 	t.customer_id = p.customer_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fd26e5a9-8c34-454d-b83b-393cdc77da4f)
+
 
 ## 10. Can you further breakdown this average value into 30 day periods?  (i.e. 0-30 days, 31-60 days etc)
 ### Explanation
@@ -441,6 +477,10 @@ ORDER BY
 	w.30_day_wdw;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/f90ff97f-2352-4792-88d2-58d2e795204e)
+
+
 ## 11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 ### Explanation
 The subscriptions and plans tables have all 
@@ -482,3 +522,6 @@ WHERE
 AND
 	p.next_plan_id = 1;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/3e23698c-9618-4d43-940c-a3b7a89c0671)
