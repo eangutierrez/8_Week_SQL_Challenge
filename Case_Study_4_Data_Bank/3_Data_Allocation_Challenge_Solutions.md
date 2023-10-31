@@ -141,6 +141,16 @@ FROM
 GROUP BY
 	rb.customer_id;
 ```	
+##### Answer
+Note: these tables only show part of the records.  The actual tables are much longer
+
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/dceb85bb-f4dc-4fc5-a2c2-3bf2b90b06df)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/c3110edd-a7be-4206-b43a-021268ba403c)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/19d054ac-6dd9-45b5-a5c5-e80a13037c03)
+
 
 The three data elements will help us find monthly totals to know how many data 
 units are needed to be provisioned for each option:
@@ -202,6 +212,10 @@ ORDER BY
 	mb.txn_month;
 ```
 
+##### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/430fed3e-a73d-4bc0-b29e-20227f3296ec)
+
+
 #### Option 2
 For option 2, we can use the two CTEs from data element two as a base to create 
 a new CTE, avg_balance_cte, that gets the average running balance partitioned by 
@@ -257,6 +271,10 @@ ORDER BY
 	am.txn_date;
 ```
 
+##### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/9eb80f00-72c0-40a4-9814-10782b903792)
+
+
 #### Option 3
 For option 3, we can use the two CTEs from data element two as base.  To query 
 the final answer, we would need the month name and the sum of the running 
@@ -299,3 +317,6 @@ GROUP BY
 ORDER BY 
 	rc.txn_date;
 ```
+
+##### Answer 
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/377f55fd-8a2a-4ef1-9842-7d15887d10e7)
