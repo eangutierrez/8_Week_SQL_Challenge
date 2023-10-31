@@ -23,6 +23,10 @@ GROUP BY
 	s.customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/8ab2d7d5-7f7f-4484-92fc-a288ae65cf70)
+
+
 ## 2. How many days has each customer visited the restaurant?
 ### Explanation
 The sales table has all the information we need: the customer_id 
@@ -38,6 +42,10 @@ FROM
 GROUP BY
 	customer_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fa2c8060-c096-47d7-96e7-f94869441b94)
+
 
 ## 3. What was the first item from the menu purchased by each customer?
 ### Explanation
@@ -77,6 +85,10 @@ GROUP BY
 	r.product_name;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/e0408f93-1b2c-4c39-afb3-5b0e2ceea8c9)
+
+
 ## 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 ### Explanation
 The information we are looking for is on the sales and menu tables.
@@ -102,6 +114,10 @@ ORDER BY
 LIMIT
 	1;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/80c4958b-0a8d-4d19-885f-9c96ff60fb77)
+
 
 ## 5. Which item was the most popular for each customer?
 ### Explanation
@@ -140,6 +156,10 @@ WHERE rk.rank = 1
 GROUP BY
 	customer_id, product_name;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/39d8e25f-f74e-4157-85e4-12b02c91e8e2)
+
 
 ## 6. Which item was purchased first by the customer after they became a member?
 ### Explanation
@@ -182,6 +202,10 @@ WHERE
 ORDER BY 
 	it.customer_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/e5fe4f4e-37d9-4b36-8645-11ea12c0512d)
+
 
 ## 7. Which item was purchased just before the customer became a member?
 ### Explanation
@@ -258,6 +282,10 @@ ORDER BY
 	it.customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/c7a5dc05-9b27-4fc2-98b4-7dfe7e758bb5)
+
+
 ## 8. What is the total items and amount spent for each member before they became a member?
 ### Explanation
 The information we are looking for is spread throughout the three tables. 
@@ -300,6 +328,10 @@ ORDER BY
 	p.customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fe4bd189-5c8c-461c-a972-d65a3d3373c8)
+
+
 ## 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier, how many points would each customer have?
 ### Explanation
 The information we need is on the sales and menu tables.  To begin, 
@@ -337,6 +369,10 @@ ON
 GROUP BY
 	customer_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/1e62a8da-9515-4d2a-a9a3-06b2ee2a035b)
+
 
 ## 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 ### Explanation
@@ -408,6 +444,10 @@ ORDER BY
 	p.customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/4fc1c72e-7e4c-4f17-8d29-8b8e0889f681)
+
+
 ## Bonus Question 1: Join All the Things (Recreate the Table)
 ### Explanation
 We are tasked with producing the table's output by ourselves. The data we
@@ -457,6 +497,10 @@ FROM
 ORDER BY b.customer_id, b.order_date;
 ```	
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/b9a645bf-cf90-4f67-99ec-6db8ad445b14)
+
+
 ## Bonus Question 2: Rank All the Things (Recreate the Table)
 ### Explanation
 This query uses the query from Bonus Question 1 as a base. It asks us to
@@ -504,3 +548,6 @@ FROM
 	base AS b
 ORDER BY b.customer_id, b.order_date;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/3ce9a294-d48a-4bee-82a5-7824c045f372)
