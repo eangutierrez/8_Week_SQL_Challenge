@@ -13,6 +13,10 @@ FROM
 	customer_orders;
 ```
 
+### Answer 
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/f7993396-407e-4b56-b2d2-49d11a194f5a)
+
+
 ## 2. How many unique customer orders were made?
 ### Explanation
 The customer_orders table has all the information we need.  Each 
@@ -25,6 +29,10 @@ SELECT
 FROM 
 	customer_orders;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/f40ad65f-ed1c-4c52-8131-18afe78c3e5a)
+
 
 ## 3. How many successful orders were delivered by each runner?
 ### Explanation
@@ -44,6 +52,10 @@ WHERE
 GROUP BY
 	runner_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/238af3fc-f31d-4811-b468-f16e5bd4a57c)
+
 
 ## 4. How many of each type of pizza was delivered?
 ### Explanation
@@ -73,6 +85,10 @@ WHERE
 GROUP BY
 	pn.pizza_name;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5c33a897-4c92-4895-8740-b2fb9d18a255)
+
 
 ## 5. How many Vegetarian and Meatlovers were ordered by each customer?
 ### Explanation
@@ -106,6 +122,10 @@ ORDER BY
 	co.customer_id, pn.pizza_name
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/6b9998fa-2d7d-4b02-a195-5f99674dbee4)
+
+
 ## 6. What was the maximum number of pizzas delivered in a single order?
 ### Explanation
 The customer_orders and runner_orders tables have all the 
@@ -136,6 +156,10 @@ FROM
 		co.order_id
 	) AS orders;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/755f6704-a6c4-44f6-9990-552603e32db6)
+
 
 ## 7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 ### Explanation
@@ -173,6 +197,10 @@ GROUP BY
   customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/7731b54b-bce9-44a3-93e2-6d9743901d54)
+
+
 ## 8. How many pizzas were delivered that had both exclusions and extras?
 ### Explanation
 The customer_orders and runner_orders tables have all the 
@@ -198,6 +226,9 @@ ON
 WHERE
 	ro.cancellation IS NULL;
 ```
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/e986ce56-b1af-40d4-8835-59bfc5574cfc)
+
 
 ## 9.  What was the total volume of pizzas ordered for each hour of the day? 
 ## Explanation
@@ -225,6 +256,9 @@ ORDER BY
 	FIELD(hour_of_the_day, '12 AM', '1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM', '9 PM', '10 PM', '11 PM');
 ```	
 
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/3daa495c-daff-4f69-a063-55ec1e4e3fc8)
+
+
 ## 10. What was the volume of orders for each day of the week?
 ## Explanation
 The customer_orders and runner_orders tables have all the 
@@ -250,3 +284,6 @@ GROUP BY
 ORDER BY 
 	day_of_the_week DESC;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/3aa2078d-af16-4356-bba7-2c8f8f42048f)
