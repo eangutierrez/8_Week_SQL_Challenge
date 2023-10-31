@@ -19,6 +19,10 @@ GROUP BY
 	1;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/2f560ce9-9299-4a81-abac-5aa1d5c5b785)
+
+
 ## 2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
 ### Explanation
 The customer_orders and runner_orders tables have all the 
@@ -57,6 +61,10 @@ FROM
 GROUP BY
 	pt.runner_id;
 ```
+
+### Answer 
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/464896dd-3726-414e-8590-62e0755695a8)
+
 
 ## 3. Is there any relationship between the number of pizzas and how long the order takes to prepare?
 ### Explanation
@@ -100,6 +108,10 @@ GROUP BY
 	tp.num_pizzas;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/032870d9-68f4-48e7-a44b-fa666e35a277)
+
+
 ## 4. What was the average distance travelled for each customer?
 ### Explanation
 The customer_orders and runner_orders tables have all the 
@@ -123,6 +135,10 @@ GROUP BY
 	co.customer_id;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fa047c34-bdf9-402c-946b-ed8c25600047)
+
+
 ## 5. What was the difference between the longest and shortest delivery times for all orders?
 ### Explanation
 The runner_orders table has all the information 
@@ -139,6 +155,10 @@ FROM
 WHERE 
 	ro.cancellation IS NULL;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fffc55f9-650e-4143-be23-daa8e2e25377)
+
 
 ## 6. What was the average speed for each runner for each delivery and do you notice any trend for these values?
 ### Explanation
@@ -171,6 +191,10 @@ GROUP BY
 ORDER BY
 	runner_id, order_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/97b2facc-e723-40fe-89c9-19b7c21d6bc0)
+
 
 ## 7. What is the successful delivery percentage for each runner?
 ### Explanation
@@ -218,3 +242,6 @@ FROM
 GROUP BY 
 	ro.runner_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/2cbf7dc4-4557-4daa-8be7-ba71eb74466e)
