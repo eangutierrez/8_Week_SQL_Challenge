@@ -76,3 +76,8 @@ FROM
 ORDER BY 
 	cd.week_date, cd.region, cd.platform, cd.segment;
 ```
+
+### Answer
+Note: this is only part of the whole table.  The final table is much longer.
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/3f8fc697-7e41-4b6f-8849-fc5184aad343)
