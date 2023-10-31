@@ -14,6 +14,10 @@ FROM
 	clean_weekly_sales;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/0e54eb9d-c5d4-485d-9445-4038cb912874)
+
+
 ## 2. What range of week numbers are missing from the dataset?
 ### Explanation
 The clean_weekly_sales table has all the 
@@ -59,6 +63,10 @@ WHERE
 	);
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/d2f5bcef-31ed-44d0-b6fc-b1af9152e5d1)
+
+
 ## 3. How many total transactions were there for each year in the dataset?
 ### Explanation
 The clean_weekly_sales table has all the 
@@ -76,6 +84,10 @@ FROM
 GROUP BY
 	calendar_year;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/28b4e311-cd62-4b1f-9099-3dbefdadb55b)
+
 
 ## 4. What is the total sales for each region for each month?
 ### Explanation
@@ -97,6 +109,12 @@ GROUP BY
 	region, month_number;
 ```
 
+### Answer
+Note: This is only part of the whole table.  The final table has 49 records.
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/62e55ed1-9ab8-4483-8fc1-6ab7f0f30734)
+
+
 ## 5. What is the total count of transactions for each platform?
 ### Explanation
 The clean_weekly_sales table has all the 
@@ -113,6 +131,10 @@ FROM
 GROUP BY
 	platform;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/6ad413c6-ac86-4956-b91e-cd89ab3f12ea)
+
 
 ## 6. What is the percentage of sales for Retail vs Shopify for each month?
 ### Explanation
@@ -161,6 +183,10 @@ SELECT
 FROM
 	sales_cte AS s;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5779f846-15f5-49c3-96c5-f17afba190f3)
+
 
 ## 7. What is the percentage of sales by demographic for each year in the dataset?
 ### Explanation
@@ -211,6 +237,10 @@ SELECT
 FROM yearly_sales_cte AS y;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/252e01b7-89c5-4907-a0c8-efbd35d2cf12)
+
+
 ## 8. Which age_band and demographic values contribute the most to Retail sales?
 ### Explanation
 The clean_weekly_sales table has all the 
@@ -248,6 +278,10 @@ ORDER BY
 	4 DESC;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/06a6d0fe-4988-4e03-b6d9-6ff48e09f7a7)
+
+
 ## 9.  Can we use the avg_transaction column to find the average transaction size for each year for Retail vs Shopify? If not - how would you calculate it instead?
 ### Explanation
 The clean_weekly_sales table has all the 
@@ -272,3 +306,6 @@ FROM
 GROUP BY
 	calendar_year, platform;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5ba8ee8e-fd38-4f76-916c-de52271fdea3)
