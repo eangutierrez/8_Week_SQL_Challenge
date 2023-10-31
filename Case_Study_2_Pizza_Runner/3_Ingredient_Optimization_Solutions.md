@@ -50,6 +50,11 @@ AND pr.topping_id IN
 	);
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/65956495-af0a-4618-9c24-0ed5d14daade)
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/a1497117-11f6-4ac7-b519-c813bad1fcb6)
+
+
 ## 2. What was the most commonly added extra?
 ### Explanation
 The customer_orders and pizza_toppings tables have
@@ -102,6 +107,10 @@ ON
 GROUP BY
 	t.extra_2;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/60e36feb-d4b3-4864-b2b6-02902b94338c)
+
 
 ## 3. What was the most common exclusion?
 ### Explanation
@@ -158,8 +167,11 @@ GROUP BY
 	t.exclusion_2;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/e6f0cbd6-909a-4159-8375-6db487cb3125)
+
+
 ## 4-A. Generate an order item for each record in the customers_orders table in the format of one of the following: Meat Lovers, Meat Lovers - Exclude Beef, Meat Lovers - Extra Bacon, Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
-/*
 ### Explanation
 The customer_orders, pizza_toppings, and pizza_names 
 tables have all the information we need. To make our work easier,
@@ -245,6 +257,10 @@ FROM
 GROUP BY 
 	os.row_num;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/42b92741-2cdc-40fd-b49f-daee10b0de5c)
+
 
 ## 5. Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients. For example: "Meat Lovers: 2xBacon, Beef, ... , Salami."
 ### Explanation
@@ -464,6 +480,10 @@ ORDER BY
 	1;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/628d44b5-1c75-4b06-ba95-476012c3372d)
+
+
 ## 6. What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
 ### Explanation
 The customer_orders, pizza_toppings, pizza_recipes, 
@@ -573,3 +593,6 @@ GROUP BY
 ORDER BY
 	2 DESC, 1;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/a799ccaf-70ca-4c21-b006-4ca14bfaacd9)
