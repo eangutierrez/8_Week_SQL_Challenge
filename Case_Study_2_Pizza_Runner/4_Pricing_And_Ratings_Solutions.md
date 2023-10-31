@@ -42,6 +42,10 @@ FROM
 	pizza_prices_cte AS pp;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/fe9ee394-878f-4869-831b-d98799d94a83)
+
+
 ## 2. What if there was an additional $1 charge for any pizza extras?  Add cheese is $1 extra
 ### Explanation
 The customer_orders, pizza_toppings, and pizza_names 
@@ -198,6 +202,10 @@ FROM
 	updated_prices_cte AS up;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/751e6b6d-beaf-4904-88da-45636d72dffa)
+
+
 ## 3. The Pizza Runner team now wants to add an additional ratings system that allows customers to rate their runner, how would you design an additional table for this new dataset - generate a schema for this new table and insert your own data for ratings for each successful customer order between 1 to 5.
 ### Explanation
 To review each runner, we would need a rating column,
@@ -241,6 +249,8 @@ tables and using the WHERE clause to filter out the cancelled
 orders, we should group by order_id to get the desired results. 
 Finally, we can get the desired columns in the SELECT statement.
 
+### Answer
+
 ```SQL
 SELECT
 	co1.customer_id,
@@ -268,6 +278,10 @@ WHERE
 GROUP BY
 	co1.order_id;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/8742a8bc-264e-49a9-a92b-052344c59128)
+
 
 ## 5. If a Meat Lovers pizza was $12 and Vegetarian $10 fixed prices with no cost for extras and each runner is paid $0.30 per kilometre traveled - how much money does Pizza Runner have left over after these deliveries?
 ### Explanation
@@ -331,3 +345,6 @@ INNER JOIN
 ON
 	r.order_id = ct.order_id; 
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/b54744bc-f7f1-4d4c-bfc5-c361bcaa2d28)
