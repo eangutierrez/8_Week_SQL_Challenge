@@ -113,6 +113,12 @@ FROM
 	sales_cte AS s
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/ccb58f88-3ad5-4765-b0ad-1b8dc3900e9b)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/7b5e2817-aae5-463c-a211-a04946169926)
+
+
 ## 2. What about the entire 12 weeks before and after?
 ### Explanation
 Explanation: The clean_weekly_sales table has all the 
@@ -186,6 +192,13 @@ SELECT
 FROM
 	sales_cte AS s
 ```
+
+### Answer
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/ab99bef6-b1e8-4f9e-8b40-998591fbf2d9)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/165b79f4-027f-4294-99c9-b92f36cf1ede)
+
 
 ## 3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?
 ### Explanation
@@ -284,6 +297,12 @@ FROM
 	week_classifier_cte AS wc;
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/5246d2b7-7cfd-415d-8d98-b08c6f3795ef)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/ceeb6d70-0ff0-4cce-aacd-02f0a09387de)
+
+
 ```SQL
 -- For 12 weeks
 -- Total sales for the entire 12 weeks before and after:
@@ -358,3 +377,8 @@ SELECT
 FROM 
 	week_classifier_cte AS wc;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/6732bcd5-ef00-4562-a892-aad5f1821462)
+
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/d0625569-633e-4d34-929f-a1c1434b9257)
