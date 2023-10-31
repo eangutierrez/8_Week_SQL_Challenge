@@ -29,10 +29,14 @@ WITH node_count AS
 		cn.region_id
 )
 SELECT
-	SUM(total_nodes_per_region)
+	SUM(total_unique_nodes_per_region)
 FROM
 	node_count;
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/c86f1540-5a74-4deb-9aef-547f8b3eec66)
+
 
 ## 2. What is the number of nodes per region?
 ### Explanation
@@ -58,6 +62,10 @@ GROUP BY
 	cn.region_id
 ```
 
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/8ee70e0e-27f8-4542-ac42-050bff1dd558)
+
+
 ## 3. How many customers are allocated to each region?
 ### Explanation
 The customer_nodes and regions tables have all the 
@@ -79,7 +87,11 @@ ON
 GROUP BY
 	cn.region_id;
 ```
-	
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/f6991a4a-2e53-49c7-91bc-2b9fc91e41c8)
+
+
 ## 4. How many days on average are customers reallocated to a different node?
 ### Explanation
 The customer_nodes table has all the information we need.
@@ -116,7 +128,11 @@ SELECT
 FROM
 	sum_days_in_node_cte AS s
 ```
-	
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/73470ec2-7933-4d97-b7a1-6c0ca64661dc)
+
+
 ## 5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
 ### Explanation
 The customer_nodes and regions tables have all the 
@@ -209,3 +225,6 @@ WHERE
 		ROUND(m.max_row * 0.8, 0),
 		ROUND(m.max_row * 0.95, 0));
 ```
+
+### Answer
+![image](https://github.com/eangutierrez/8_Week_SQL_Challenge/assets/92600212/a9d0c63c-2916-4d26-8d71-c98ccf43031d)
